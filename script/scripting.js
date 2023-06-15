@@ -1,32 +1,25 @@
-function p_b0() {
+// Init global variables
+var e = ["", ""]
+var nowIdx = 0;
+var isDot = false;
+var op = "";
+var ans = 0;
+// Function to reset the state of the calculator
+function reset() {
     document.getElementById("screendigit").innerHTML = "0";
+    e[0] = "";
+    e[1] = "";
+    nowIdx = 0;
+    isDot = false;
+    op = "";
+    ans = "";
 }
-function p_b1() {
-    document.getElementById("screendigit").innerHTML = "1";
-}
-function p_b2() {
-    document.getElementById("screendigit").innerHTML = "2";
-}
-function p_b3() {
-    document.getElementById("screendigit").innerHTML = "3";
-}
-function p_b4() {
-    document.getElementById("screendigit").innerHTML = "4";
-}
-function p_b5() {
-    document.getElementById("screendigit").innerHTML = "5";
-}
-function p_b6() {
-    document.getElementById("screendigit").innerHTML = "6";
-}
-function p_b7() {
-    document.getElementById("screendigit").innerHTML = "7";
-}
-function p_b8() {
-    document.getElementById("screendigit").innerHTML = "8";
-}
-function p_b9() {
-    document.getElementById("screendigit").innerHTML = "9";
+// Function to handle button clicks
+function p_b_num(n) {
+    // if (nowIdx == 0) {
+    //     e[0] += "0";
+    // }
+    document.getElementById("screendigit").innerHTML = n;
 }
 function p_b_dot() {
     document.getElementById("screendigit").innerHTML = ".";
@@ -41,8 +34,8 @@ function p_b_sub() {
     document.getElementById("screendigit").innerHTML = "-";
 }
 function p_b_div() {
-    document.getElementById("screendigit").innerHTML = "*";
+    document.getElementById("screendigit").innerHTML = "/";
 }
 function p_b_mul() {
-    document.getElementById("screendigit").innerHTML = "/";
+    document.getElementById("screendigit").innerHTML = "*";
 }
