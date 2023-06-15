@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* html {
+                min-height: 500px;
+                min-width: 500px;
+            }
+            body {
+                min-height: 400px;
+                min-width: 400px;
+                background-color: aqua;
+            } */
+            * {
+                box-sizing: border-box;
+            }
+            #calbody {
+                width: 400px;
+                height: 500px;
+                background-color: rgb(201, 235, 228);
+                border: 4px solid rgb(98,49,18);
+                display: flex;
+                flex-direction: column;
+            }
+            #logo {
+                height: 15%;
+                border: 2px solid red;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                
+            }
+            #logoitem {
+                width: 100px;
+                height: 50px;
+                background-color: rgb(130,123,113);
+                border: 4px solid rgb(88,39,6);
+                margin: 20px;                
+            }
+            #screen {
+                height: 15%;
+                border: 2px solid green;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #screenitem {
+                height: 70%;
+                width: 95%;
+                background-color: rgb(197,212,217);
+                border: 4px solid rgb(87,48,14);
+                /* Set up container for the digit on the screen */
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            #screendigit {
+                margin: 7px;
+                font-size: 40px;
+                color: rgb(112,123,127);
+            }
+            #keypad {
+                height: 70%;
+                border: 2px solid blue;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: space-around;
+            }
+            .keybutton {
+                height: 65px;
+                width: 65px;
+                margin: 8px;
+                background-color: rgb(250,221,161);
+                border: 4px solid rgb(98,49,18);
+                font-size: 30px;
+                color: rgb(45,84,144);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="calbody">
+            <div id="logo">
+                <div id="logoitem"></div>
+            </div>
+            <div id="screen">
+                <div id="screenitem">
+                    <div id="screendigit">240.75</div>
+                </div>
+            </div>
+            <div id="keypad">
+                <button class="keybutton" id="b7">7</button>
+                <button class="keybutton" id="b8">8</button>
+                <button class="keybutton" id="b9">9</button>
+                <button class="keybutton" id="b_div">/</button>
+                <button class="keybutton" id="b4">4</button>
+                <button class="keybutton" id="b5">5</button>
+                <button class="keybutton" id="b6">6</button>
+                <button class="keybutton" id="b_mul">x</button>
+                <button class="keybutton" id="b1">1</button>
+                <button class="keybutton" id="b2">2</button>
+                <button class="keybutton" id="b3">3</button>
+                <button class="keybutton" id="b_sub">-</button>
+                <button class="keybutton" id="b0">0</button>
+                <button class="keybutton" id="b_dot">.</button>
+                <button class="keybutton" id="b_eq">=</button>
+                <button class="keybutton" id="b_add">+</button>
+            </div>
+        </div>
+    </body>
+</html>
